@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js" data-ng-app="alTayer"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js" data-ng-app="alTayer"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <title data-ng-bind="$state.current.data.pageTitle + ' | ' + config.meta.title"></title>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta name="description" content="{{config.meta.description}}"/>
+    <meta name="keywords" content="{{config.meta.keywords}}"/>
+    <meta name="author" content="@Mehmet Tamturk"/>
+
+    <!-- inject:css -->
+    <!-- endinject -->
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Ropa+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <base href="/">
+</head>
+
+<body>
+    <div class="navbar-wrapper" id="navbar-wrapper">
+        <menu></menu>
+        <div ui-view></div>
+    </div>
+
+    <!-- inject:js -->
+    <!-- endinject -->
+
+    <script>
+        angular.element(document).ready(function() {
+            angular.bootstrap(document, ['alTayer']);
+        });
+    </script>
+</body>
+</html>

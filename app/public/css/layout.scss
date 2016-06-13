@@ -1,0 +1,55 @@
+$desktop-width: 960px;
+$mobile-width: 90%;
+
+body {
+    font-family: 'Helvetica Neue',sans-serif;
+}
+
+.navbar-wrapper {
+    width: $desktop-width;
+    margin: 0 auto;
+}
+
+.on-mobile {
+    display: none;
+}
+
+.on-web {
+    display: block;
+}
+
+@media only screen and (max-width: $desktop-width) {
+    .on-mobile, .navbar-toggle {
+        display: block!important;
+    }
+
+    .on-web {
+        display: none;
+    }
+
+    .navbar-wrapper {
+        width: $mobile-width;
+        min-width: 320px;
+    }
+
+    .user-menu {
+        height: 20px;
+        margin-bottom: 20px;
+    }
+
+    .navbar-toggle {
+        float: left;
+    }
+
+    .navbar-toggle .icon-bar {
+        background: #bdbdbd;
+    }
+
+    .user-menu.on-mobile .link {
+        position: relative;
+        top: 5px;
+        color: #4c4b4c;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+}

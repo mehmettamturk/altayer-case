@@ -1,0 +1,87 @@
+.menu {
+  position: relative;
+  background: white;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  height: 180px; }
+  .menu .menu-item {
+    width: 100%; }
+  .menu .top-menu {
+    margin-bottom: 10px; }
+    .menu .top-menu a.link {
+      position: relative;
+      top: 5px;
+      color: #4c4b4c;
+      font-size: 12px;
+      margin-left: 10px; }
+      .menu .top-menu a.link:hover {
+        text-decoration: none; }
+  .menu .sub-menu {
+    margin-bottom: 20px; }
+    .menu .sub-menu a {
+      font-size: 17px;
+      position: relative;
+      margin: 0 10px;
+      text-decoration: none;
+      color: #4d4d4d;
+      font-family: 'Ropa Sans', sans-serif; }
+  .menu .search-menu {
+    width: 300px;
+    margin: 0 auto 40px;
+    position: relative; }
+    .menu .search-menu input {
+      border: none;
+      padding: 5px 10px;
+      -webkit-appearance: none;
+      font-style: italic;
+      border-bottom: 1px solid #bdbdbd;
+      width: 300px; }
+  .menu .search-results {
+    position: absolute;
+    background: white;
+    padding: 20px 0;
+    width: 300px;
+    border: 1px solid #bdbdbd;
+    border-top: none;
+    z-index: 2; }
+    .menu .search-results a {
+      font-weight: bold;
+      line-height: 25px;
+      display: block;
+      cursor: pointer;
+      color: #4c4b4c; }
+  .menu .search-button {
+    background: url("/img/search.png");
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 7px;
+    right: 7px; }
+    .menu .search-button.loading {
+      background: url("/img/loading.gif"); }
+  .menu .navbar-toggle {
+    cursor: pointer; }
+  .menu .shopping-bag {
+    cursor: pointer;
+    background: url("/img/bag.png");
+    display: inline-block;
+    height: 21px;
+    width: 21px;
+    position: relative;
+    top: 14px; }
+  .menu .sub-menu.collapse.in {
+    background: #b9a83c;
+    overflow: hidden;
+    height: auto;
+    padding: 0;
+    position: absolute;
+    top: 50px;
+    width: 200px;
+    left: 26px; }
+  .menu .sub-menu.collapse.in a {
+    color: white !important;
+    width: 100%;
+    display: block;
+    line-height: 30px; }

@@ -1,0 +1,9 @@
+{
+  "redis": {
+    "url": "redis://redis:6379"
+  },
+  "rabbitmq": {
+    "url": "amqp://rabbitmq"
+  },
+  "searchTTL": 15
+}

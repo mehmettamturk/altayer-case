@@ -1,0 +1,48 @@
+<nav class="navbar navbar-fixed-top menu" data-spy="affix" data-offset-top="600">
+    <div class="row top-menu">
+        <div class="col-md-5 col-sm-5 col-xs-5">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2">
+            <a class="header item" href="/">
+                <img src="/img/logo.png" alt="Logo"/>
+            </a>
+        </div>
+        <div class="col-md-5 col-sm-5 col-xs-5 user-menu text-right on-web">
+            <a class="link" href=""> Sign In/Register </a>
+            <a class="link" href=""> Stores/Stockists </a>
+            <a class="link" href=""> Your bag (2) </a>
+        </div>
+        <div class="col-md-5 col-sm-5 col-xs-5 text-right on-mobile">
+            <a class="shopping-bag"></a>
+        </div>
+    </div>
+    <div class="row user-menu on-mobile">
+        <a class="link" href=""> Sign In/Register </a>
+        <a class="link" href=""> Stores/Stockists </a>
+    </div>
+    <div id="navbar" class="row sub-menu on-web">
+        <a href=""> CLOTHING </a>
+        <a href=""> TRAVEL </a>
+        <a href=""> NURSERY FURNITURE </a>
+        <a href=""> PLAYTIME </a>
+        <a href=""> BATHTIME </a>
+        <a href=""> FEEDING </a>
+        <a href=""> GIFTS </a>
+    </div>
+    <div class="row row search-menu">
+        <div class="search-input">
+            <input type="text" placeholder="Hello, I'm looking for..." ng-model="searchKey" ng-model-options="{ debounce: 500 }" ng-change="search()"/>
+            <span class="search-button" ng-class="{'loading': searchLoading}"></span>
+        </div>
+        <div class="search-results"  ng-if="searchResult.length && showSearchResult" click-outside="hideResultBox()">
+            <a ng-repeat="result in searchResult"> {{result.term}} </a>
+        </div>
+    </div>
+
+</nav>

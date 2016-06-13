@@ -1,0 +1,7 @@
+{
+    "http": {
+        "port": 3002
+    },
+    "SITE_URL": "https://altayer.com",
+    "API_URL": "https://altayer.com/api"
+}
