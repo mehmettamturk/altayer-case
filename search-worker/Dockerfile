@@ -6,7 +6,6 @@ RUN apt-get update -qq && apt-get install -y build-essential
 
 RUN mkdir /app
 WORKDIR /app
-
 COPY . /app
 
 RUN rm -rf /src/node_modules

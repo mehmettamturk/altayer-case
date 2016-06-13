@@ -11,6 +11,7 @@ microserviceKit
   .then(() => {
       console.log('Search-Worker initialized.');
       const searchQueue = microserviceKit.amqpKit.getQueue('search');
+
       searchQueue.consumeEvent('SEARCH_KEYWORD', (data, done) => {
           console.log('SEARCH: ', data);
           if (!data || (data && !data.keyword))
