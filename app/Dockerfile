@@ -12,10 +12,10 @@ COPY . /src
 
 # Install app dependencies
 RUN rm -rf /src/node_modules
-RUN npm install
+RUN npm install && npm run-script postinstall
 RUN bower install --allow-root
-RUN gulp build
+RUN APP_ENV=production gulp build
 
 EXPOSE 3002
 
-CMD [ "npm", "start" ]
+CMD [ "NODE_ENV=production", "npm", "start" ]

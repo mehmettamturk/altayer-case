@@ -53,7 +53,7 @@ let fontFiles = [
 let compiledFileName = 'compiled-' + new Date().getTime();
 
 function readConfig() {
-    let env = process.env.APP_ENV || argv.env || 'development';
+    let env = process.env.APP_ENV || argv.env || 'default';
     let data = require('./config/' + env + '.json');
     return data;
 }

@@ -2,7 +2,7 @@
 
 const winston = require('winston');
 const MicroserviceKit = require('microservice-kit');
-const config = require('./config');
+const config = require('config');
 
 
 module.exports = new MicroserviceKit({

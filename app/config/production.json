@@ -1,7 +1,11 @@
 {
-    "http": {
-        "port": 3002
-    },
-    "SITE_URL": "https://altayer.com",
-    "API_URL": "https://altayer.com/api"
+  "http": {
+    "port": 3002,
+    "prefix": ""
+  },
+  "rabbitmq": {
+    "url": "amqp://rabbitmq"
+  },
+  "SITE_URL": "",
+  "API_URL": "/api"
 }

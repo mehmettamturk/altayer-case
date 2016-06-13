@@ -1,7 +1,7 @@
 'use strict';
 
 const _ = require('lodash');
-const winston = require('search-worker/lib/logger');
+const winston = require('winston');
 const ErrorType = require('microservice-kit').ErrorType;
 
 

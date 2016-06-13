@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/app/index.js",
   "scripts": {
-    "start": "node src/boot.js",
+    "start": "node ./bin/start",
     "postinstall": "rm -f node_modules/search-worker && ln -s ../src/ node_modules/search-worker"
   },
   "author": "",
@@ -13,6 +13,7 @@
     "node": "4.x"
   },
   "dependencies": {
+    "config": "^1.21.0",
     "debug": "^2.2.0",
     "lodash": "^4.0.1",
     "microservice-kit": "https://signalive-bot:172cd8e49268cba4e4d22af36c6492ffc0e7609f@github.com/signalive/microservice-kit.git#0.3.10",

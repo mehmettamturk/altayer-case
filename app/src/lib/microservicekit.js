@@ -1,15 +1,13 @@
 'use strict';
 
+const config = require('config');
 const winston = require('winston');
 const MicroserviceKit = require('microservice-kit');
-const config = require('altayer/lib/config');
-
 
 module.exports = new MicroserviceKit({
     type: 'search-service',
     amqp: {
         url: config.get('rabbitmq.url'),
-        //url: "amqp://localhost",
         queues: [
             {
                 name: 'Search',

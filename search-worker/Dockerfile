@@ -10,6 +10,6 @@ WORKDIR /app
 COPY . /app
 
 RUN rm -rf /src/node_modules
-RUN npm install
+RUN npm install && npm run-script postinstall
 
-CMD ["npm", "start"]
+CMD ["NODE_ENV=production", "npm", "start"]

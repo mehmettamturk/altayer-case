@@ -2,7 +2,6 @@
 
 const request = require('request');
 const router = require('express').Router();
-const config = require('altayer/config');
 
 var microserviceKit = require('altayer/lib/microservicekit');
 var searchQueue = microserviceKit.amqpKit.getQueue('search');

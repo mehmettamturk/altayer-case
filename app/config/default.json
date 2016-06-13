@@ -4,6 +4,8 @@
     "prefix": ""
   },
   "rabbitmq": {
-    "url": "amqp://rabbitmq"
-  }
+    "url": "amqp://localhost:5672"
+  },
+  "SITE_URL": "http://localhost:3002",
+  "API_URL": "http://localhost:3002/api"
 }
