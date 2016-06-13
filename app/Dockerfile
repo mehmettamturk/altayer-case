@@ -18,4 +18,4 @@ RUN APP_ENV=production gulp build
 
 EXPOSE 3002
 
-CMD [ "NODE_ENV=production", "npm", "start" ]
+CMD [ "npm", "start" ]

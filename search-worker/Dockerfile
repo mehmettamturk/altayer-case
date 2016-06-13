@@ -12,4 +12,4 @@ COPY . /app
 RUN rm -rf /src/node_modules
 RUN npm install && npm run-script postinstall
 
-CMD ["NODE_ENV=production", "npm", "start"]
+CMD ["npm", "start"]

@@ -14,6 +14,8 @@ services:
 
   app:
     build: ./app
+    environment:
+      NODE_ENV: production
     restart: unless-stopped
     links:
       - redis
@@ -25,6 +27,8 @@ services:
 
   search-worker:
     build: ./search-worker
+    environment:
+      NODE_ENV: production
     restart: unless-stopped
     links:
       - redis
