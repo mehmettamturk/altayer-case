@@ -24,15 +24,4 @@ services:
       - "3002:3002"
     depends_on:
       - rabbitmq
-
-  search-worker:
-    build: ./search-worker
-    environment:
-      NODE_ENV: production
-    restart: unless-stopped
-    links:
-      - redis
-      - rabbitmq
-    depends_on:
-      - rabbitmq
       - redis
